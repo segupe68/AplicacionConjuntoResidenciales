@@ -1,3 +1,4 @@
+CREATE DATABASE administración_conjuntos_residenciales;
 CREATE TABLE Registro_Usuario(
 idUsuario int primary key not null,
 IdInmueble int primary key not null,
@@ -43,5 +44,3 @@ mes varchar (20) not null,
 Fvence varchar (20) not null,
 total int not null
 );
-
-
