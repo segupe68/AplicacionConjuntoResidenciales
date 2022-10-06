@@ -37,7 +37,7 @@ IdObligacion int primary key not null,
 IdInmueble int,
 foreign key (IdInmueble) references Inmueble(IdInmueble),
 Estado int not null,
-pago int primary key not null,
+pago int not null,
 año varchar (20) not null,
 mes varchar (20) not null,
 Fvence varchar (20) not null
