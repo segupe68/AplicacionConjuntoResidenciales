@@ -45,10 +45,8 @@ Fvence varchar (20) not null
 
 CREATE TABLE Factura (
 IdFactura int primary key not null,
-pago int primary key not null,
-mora int primary key not null,
-año varchar (20) not null,
-mes varchar (20) not null,
-Fvence varchar (20) not null,
+IdObligacion int,
+foreign key (IdObligacion) references Obligacion(IdObligacion),
+mora int not null,
 total int not null
 );
